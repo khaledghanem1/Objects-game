@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html>   
+<head></head>
+<title></title>
+<h1></h1>
+<body>
+    <script> 
+   var questions = {
+       q1: [" do you own a laptop ?", "f"],
+       q2: [ "do you know how to swim", "t"],
+       q3: ["do you workout ?", "t"],
+       q4: [" do you watch sports?", "f"],
+       q5: ["you love the winter?", "f"]
+   }
+   function promptQuestion(question, answer){
+       userAnswer = prompt(question)
+       console.log("user answer" + userAnswer)
+        console.log("og question" + question, answer)
+        if (userAnswer === "t" || userAnswer === "f"){
+            if (userAnswer === answer){
+            alert("youre right")
+        } else{
+            alert("youre wrong")
+        }
+        } else{
+            alert("please choose t or f")
+            userAnswer = prompt(question)
+        }
+        
+   }
+   promptQuestion(questions.q1[0], questions.q1[1]);
+   promptQuestion(questions.q2[0], questions.q2[1]);
+   promptQuestion(questions.q3[0], questions.q3[1]);
+   promptQuestion(questions.q4[0], questions.q4[1]);
+   promptQuestion(questions.q5[0], questions.q5[1]);
+ 
+    
+    
+    
+    </script>
+    
+</body>
+
+</html>
